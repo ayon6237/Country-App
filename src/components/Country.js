@@ -3,6 +3,7 @@ import React from 'react'
 const Country = (props) => {
     const {country} = props;
     const {name,area,flags,capital,population} = country;
+    
 
     const removeButton =(name)=>{
         props.onRemoveCountry(name);
@@ -15,6 +16,7 @@ const Country = (props) => {
         <h2>Capital :{capital}</h2>
         <h4>Area : {area}</h4>
         <h4>Population : {population}</h4>
+        
         </div>
         <button className='button' onClick={()=>{
             removeButton(name.common)
